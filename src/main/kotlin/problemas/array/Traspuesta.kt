@@ -1,26 +1,11 @@
 package problemas.array
 
 fun traspuesta(matriz: Array<IntArray>): Array<IntArray> {
-    val filas = matriz.size
-    val columnas = matriz[0].size
-    val traspuesta = Array(columnas) { IntArray(filas) }
-
-    for (i in 0 until filas) {
-        for (j in 0 until columnas) {
-            traspuesta[j][i] = matriz[i][j]
-        }
-    }
-
-    return traspuesta
+    throw UnsupportedOperationException("A implementar por el alumno")
 }
 
 fun imprimirMatriz(matriz: Array<IntArray>) {
-    for (fila in matriz) {
-        for (valor in fila) {
-            print("$valor ")
-        }
-        println()
-    }
+    throw UnsupportedOperationException("A implementar por el alumno")
 }
 
 fun main() {

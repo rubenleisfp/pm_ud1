@@ -4,24 +4,11 @@ fun main() {
 }
 
 fun scoreWord(word: String): Int {
-    var puntuacion : Int = 0
-    for(char in word){
-        puntuacion +=  scoreLetter(char)
-    }
-    return puntuacion
-    //return word.sumOf { scoreLetter(it) }
+    throw UnsupportedOperationException("A implementar por el alumno")
 }
 
-fun scoreLetter(c: Char): Int =
-    when (c.uppercaseChar()) {
-        in "AEIOULNRST" -> 1
-        in "DG" -> 2
-        in "BCMP" -> 3
-        in "FHVWY" -> 4
-        'K' -> 5
-        in "JX" -> 8
-        in "QZ" -> 10
-        else -> 0
-    }
+fun scoreLetter(c: Char): Int {
+    throw UnsupportedOperationException("A implementar por el alumno")
+}
 
 

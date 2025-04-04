@@ -31,8 +31,7 @@ fun CharSequence.unaccent(): String {
  * en el texto recibido como argumento
  */
 fun contarApariciones(texto: String, nombrePila: String): Int {
-    val contadorLetras: MutableMap<Char, Int> = actualizarContadorLetra(texto, nombrePila)
-    return calcularTotalPuntos(contadorLetras)
+    throw UnsupportedOperationException("A implementar por el alumno")
 }
 
 /**
@@ -42,39 +41,19 @@ private fun actualizarContadorLetra(
     texto: String,
     nombrePila: String
 ): MutableMap<Char, Int> {
-    val contadorLetras: MutableMap<Char, Int> = mutableMapOf()
-    for (c in texto) {
-        var letraMayuscula = c.uppercaseChar()
-        when (letraMayuscula) {
-            in nombrePila -> {
-                actualizarContador(letraMayuscula, contadorLetras)
-                //println("Encontrado $c")
-            }
-            //else -> println("No encontrado $c")
-        }
-    }
-    return contadorLetras
+    throw UnsupportedOperationException("A implementar por el alumno")
 }
 
 /**
  * Calcula el total de letras encontradas en el texto
  */
 private fun calcularTotalPuntos(contadorLetras: MutableMap<Char, Int>): Int {
-    var totalPuntos: Int = 0
-    contadorLetras.forEach { entry ->
-        println("${entry.key} : ${entry.value}")
-        totalPuntos += entry.value
-    }
-    return totalPuntos
+    throw UnsupportedOperationException("A implementar por el alumno")
 }
 
 /**
  * Suma 1 a la letras encontrada en el mapa
  */
 fun actualizarContador(letraEncontrada : Char,  contadorLetras: MutableMap<Char, Int> = mutableMapOf()) {
-    if (contadorLetras.containsKey(letraEncontrada)) {
-        contadorLetras.merge(letraEncontrada, 1, Int::plus)
-    }else {
-        contadorLetras[letraEncontrada] = 1
-    }
+    throw UnsupportedOperationException("A implementar por el alumno")
 }

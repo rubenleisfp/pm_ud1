@@ -2,10 +2,7 @@ package problemas.funciones_avanzadas
 
 
     fun imprimirSi(arreglo: IntArray, fn:(Int) -> Boolean) {
-        for(elemento in arreglo)
-            if (fn(elemento))
-                print("$elemento ")
-        println();
+        throw UnsupportedOperationException("A implementar por el alumno")
     }
 
     fun main(parametro: Array<String>) {

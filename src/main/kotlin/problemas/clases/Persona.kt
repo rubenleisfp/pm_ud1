@@ -12,21 +12,13 @@ import java.util.*
  */
 
 class Persona {
-    var nombre = ""
-        get() = "($field)"
-        set(value) {
-            field = value.uppercase()
-        }
 
-
-    var edad=0
-        get() = field
 }
 
 fun main() {
-    var p1 = Persona()
-    p1.nombre="ruben"
-    println(p1.nombre)
+//    var p1 = Persona()
+//    p1.nombre="ruben"
+//    println(p1.nombre)
 
 //    var persona = Persona()
 //    persona.nombre = "ruben"

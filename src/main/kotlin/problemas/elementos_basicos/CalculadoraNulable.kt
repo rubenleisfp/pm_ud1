@@ -10,9 +10,7 @@ fun main(argumento: Array<String>) {
 
 class CalculadoraNulable() {
     fun suma(a: Int?, b:Int?):Int{
-        val valorA = a ?: 0  // Si 'a' es nulo, se asigna 0
-        val valorB = b ?: 0  // Si 'b' es nulo, se asigna 0
-        return valorA + valorB
+        throw UnsupportedOperationException("A implementar por el alumno")
     }
 
 }

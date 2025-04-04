@@ -4,14 +4,10 @@ class Carrito {
     val productos: MutableList<Producto> = mutableListOf()
 
     fun agregarProducto(producto: Producto) {
-        productos.add(producto)
+        throw UnsupportedOperationException("A implementar por el alumno")
     }
 
     fun calcularTotal(): Double {
-        var total = 0.0
-        for (producto in productos) {
-            total += producto.precio
-        }
-        return total
+        throw UnsupportedOperationException("A implementar por el alumno")
     }
 }

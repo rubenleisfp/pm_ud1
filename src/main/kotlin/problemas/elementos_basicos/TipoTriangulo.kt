@@ -1,13 +1,7 @@
 package problemas.elementos_basicos
 
 fun tipoTriangulo(lado1: Int, lado2: Int, lado3: Int): String {
-    return if (lado1 == lado2 && lado2 == lado3) {
-        "Equilátero"
-    } else if (lado1 == lado2 || lado1 == lado3 || lado2 == lado3) {
-        "Isósceles"
-    } else {
-        "Escaleno"
-    }
+    throw UnsupportedOperationException("A implementar por el alumno")
 }
 
 fun main() {

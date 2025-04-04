@@ -54,17 +54,11 @@ fun main() {
 }
 
 fun moveSpaceInvader(currentPlayer: SpaceInvader, movementDirection: String) {
-    when (movementDirection) {
-        "R" -> currentPlayer.moveRight()
-        "L" -> currentPlayer.moveLeft()
-        "U" -> currentPlayer.moveUp()
-        "D" -> currentPlayer.moveDown()
-        else -> println("Invalid movement. We stay in the same position")
-    }
+    throw UnsupportedOperationException("A implementar por el alumno")
 }
 
 fun getRandomCoordenate(doomRange: Int): Int {
-    return Random.nextInt(0, doomRange)
+    throw UnsupportedOperationException("A implementar por el alumno")
 }
 
 
@@ -77,78 +71,47 @@ class SpaceInvader(val name: String, val rangeDoom: Int) {
     var enemy: SpaceInvader? = null
 
     fun attachEnemy(enemy: SpaceInvader) {
-        this.enemy = enemy
+        throw UnsupportedOperationException("A implementar por el alumno")
     }
 
     fun moveLeft() {
-        if (x > 0) {
-            x -= 1
-        }
-        else {
-            println("No se pudo mover a la izquierda. Fuera de limite")
-        }
+        throw UnsupportedOperationException("A implementar por el alumno")
     }
 
     fun moveRight() {
-        if (x < rangeDoom -1) {
-            x += 1
-        } else {
-            println("No se pudo mover a la derecha. Fuera de limite")
-        }
+        throw UnsupportedOperationException("A implementar por el alumno")
     }
 
     fun moveUp() {
-        if (y < rangeDoom-1) {
-            y += 1
-        }
-        else {
-            println("No se pudo mover arriba. Fuera de limite")
-        }
+        throw UnsupportedOperationException("A implementar por el alumno")
     }
 
     fun moveDown() {
-        if (y > 0) {y -= 1}
-        else {
-            println("No se pudo mover abajo. Fuera de limite")
-        }
+        throw UnsupportedOperationException("A implementar por el alumno")
     }
 
     fun attack(x: Int, y: Int) {
 
-        if (enemy == null) {
-            throw IllegalStateException("Es necesrio iniciar el juego antes de atacar")
-        }
-
-        if (wasEnemyReached(x, y)) {
-            enemyImpacted()
-        } else {
-            emenyNotReached()
-        }
-        if (isGameEnded()) {
-
-        }
+        throw UnsupportedOperationException("A implementar por el alumno")
     }
 
 
     fun isGameEnded(): Boolean {
-        return (this.health <= 0) || (this.enemy?.health!! <= 0)
+        throw UnsupportedOperationException("A implementar por el alumno")
     }
 
     private fun wasEnemyReached(x: Int, y: Int) = enemy?.x == x && enemy?.y == y
 
     private fun emenyNotReached() {
-        println("Enemy not impacted!")
-        this.health = this.health.minus(10)
+        throw UnsupportedOperationException("A implementar por el alumno")
     }
 
     private fun enemyImpacted() {
-        println("Enemy impacted!")
-        enemy!!.health = enemy!!.health.minus(50)
+        throw UnsupportedOperationException("A implementar por el alumno")
     }
 
     fun showPlayers() {
-        println(toString())
-        println(enemy.toString())
+        throw UnsupportedOperationException("A implementar por el alumno")
     }
 
     override fun toString(): String {

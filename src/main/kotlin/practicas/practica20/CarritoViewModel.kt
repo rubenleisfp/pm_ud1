@@ -3,19 +3,11 @@ class CarritoViewModel {
     private var uiState = CarritoState()
 
     fun agregarProducto(producto: Producto) {
-        uiState = uiState.copy(
-            productos = uiState.productos + producto,
-            total = uiState.total + producto.precio
-        )
+        throw UnsupportedOperationException("A implementar por el alumno")
     }
 
     fun removerProducto(producto: Producto) {
-        if (producto in uiState.productos) {
-            uiState = uiState.copy(
-                productos = uiState.productos - producto,
-                total = uiState.total - producto.precio
-            )
-        }
+        throw UnsupportedOperationException("A implementar por el alumno")
     }
 
     fun obtenerEstado(): CarritoState = uiState

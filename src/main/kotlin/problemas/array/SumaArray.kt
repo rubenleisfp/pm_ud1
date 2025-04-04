@@ -1,11 +1,7 @@
 package problemas.array
 
 fun sumaArray(array: IntArray): Int {
-    var suma = 0
-    for (i in array.indices) {
-        suma += array[i]
-    }
-    return suma
+    throw UnsupportedOperationException("A implementar por el alumno")
 }
 
 fun main() {

@@ -13,20 +13,5 @@ class Calculadora() {
         return a + b;
     }
 
-    fun resta(a: Int, b: Int): Int {
-        //Implementa la operacion suma
-        return a - b;
-    }
-
-    fun multiplicacion(a: Int, b: Int): Int {
-        //Implementa la operacion suma
-        return a * b;
-    }
-
-    fun division(a: Int, b: Int): Int {
-        //Implementa la operacion suma
-        return a / b;
-    }
-
     //Implementa el resto de metodos restar, dividir, multiplicar
 }

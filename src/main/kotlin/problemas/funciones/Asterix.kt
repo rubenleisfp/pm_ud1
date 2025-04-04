@@ -12,10 +12,5 @@ fun main() {
 }
 
 fun imprimirCuadradoAsteriscos(n: Int) {
-    for (i in 1..n) {
-        for (j in 1..n) {
-            print("* ")
-        }
-        println() // Salto de línea después de cada fila
-    }
+    throw UnsupportedOperationException("A implementar por el alumno")
 }

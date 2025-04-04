@@ -13,13 +13,6 @@ fun main() {
 }
 
 fun generateMultiplicationTable(number: Int): Int {
-    var result: Int=0
-    var total: Int = 0;
-    for (i in 1..10) {
-        result = number * i
-        total += result
-        println("$number * $i = $result")
-    }
-    return total
+    throw UnsupportedOperationException("A implementar por el alumno")
 }
 

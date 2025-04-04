@@ -3,7 +3,7 @@ package problemas.string
 
 // Función que invierte el String recibido como parámetro
 fun invertirString(input: String): String {
-    return input.reversed()
+    throw UnsupportedOperationException("A implementar por el alumno")
 }
 
 // Función principal para probar la funcionalidad

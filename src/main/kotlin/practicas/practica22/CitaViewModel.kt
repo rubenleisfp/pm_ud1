@@ -4,17 +4,15 @@ class CitaViewModel {
     private var citas: List<CitaState> = emptyList()
 
     fun agregarCita(id: Int, cliente: String, hora: String) {
-        citas = citas + CitaState(id, cliente, hora)
+        throw UnsupportedOperationException("A implementar por el alumno")
     }
 
     fun confirmarCita(id: Int) {
-        citas = citas.map { cita ->
-            if (cita.id == id) cita.copy(confirmada = true) else cita
-        }
+        throw UnsupportedOperationException("A implementar por el alumno")
     }
 
     fun cancelarCita(id: Int) {
-        citas = citas.filter { it.id != id }
+        throw UnsupportedOperationException("A implementar por el alumno")
     }
 
     fun obtenerCitas(): List<CitaState> = citas

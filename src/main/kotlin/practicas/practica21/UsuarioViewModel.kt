@@ -4,13 +4,11 @@ class UsuarioViewModel {
     private var usuarios: List<UsuarioState> = emptyList()
 
     fun agregarUsuario(id: Int, nombre: String) {
-        usuarios = usuarios + UsuarioState(id, nombre)
+        throw UnsupportedOperationException("A implementar por el alumno")
     }
 
     fun cambiarEstadoUsuario(id: Int) {
-        usuarios = usuarios.map { usuario ->
-            if (usuario.id == id) usuario.copy(activo = !usuario.activo) else usuario
-        }
+        throw UnsupportedOperationException("A implementar por el alumno")
     }
 
     fun obtenerUsuarios(): List<UsuarioState> = usuarios

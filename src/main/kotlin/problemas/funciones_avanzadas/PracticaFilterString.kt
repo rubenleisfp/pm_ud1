@@ -1,11 +1,7 @@
 package problemas.funciones_avanzadas
 fun filtrar(cadena: String, fn: (Char) -> Boolean): String
 {
-    val cad = StringBuilder()
-    for(ele in cadena)
-        if (fn(ele))
-            cad.append(ele)
-    return cad.toString()
+    throw UnsupportedOperationException("A implementar por el alumno")
 }
 
 fun main() {
