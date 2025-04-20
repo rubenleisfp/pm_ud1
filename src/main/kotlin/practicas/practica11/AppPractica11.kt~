@@ -1,6 +1,7 @@
 package practicas.practica11
 
 fun main() {
+    data class Producto(val nombre: String, val precio: Double, val esEcologico: Boolean)
 
     val productos = listOf(
         Producto("Manzana", 1.2, true),
