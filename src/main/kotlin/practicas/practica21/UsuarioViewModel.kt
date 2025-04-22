@@ -8,10 +8,15 @@ class UsuarioViewModel {
     }
 
     fun cambiarEstadoUsuario(id: Int) {
-        usuarios = usuarios.map { usuario ->
-            if (usuario.id == id) usuario.copy(activo = !usuario.activo) else usuario
+        val nuevosUsuarios = mutableListOf<UsuarioState>()
+        for (usuario in usuarios) {
+            if (usuario.id == id) {
+                nuevosUsuarios.add(usuario.copy(activo = !usuario.activo))
+            } else {
+                nuevosUsuarios.add(usuario)
+            }
         }
+        usuarios = nuevosUsuarios
     }
-
     fun obtenerUsuarios(): List<UsuarioState> = usuarios
 }
