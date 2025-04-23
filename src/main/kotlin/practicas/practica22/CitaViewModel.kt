@@ -8,13 +8,26 @@ class CitaViewModel {
     }
 
     fun confirmarCita(id: Int) {
-        citas = citas.map { cita ->
-            if (cita.id == id) cita.copy(confirmada = true) else cita
+        val nuevasCitas = mutableListOf<CitaState>()
+        for (cita in citas) {
+            if (cita.id == id) {
+                nuevasCitas.add(cita.copy(confirmada = true))
+            } else {
+                nuevasCitas.add(cita)
+            }
         }
+        citas = nuevasCitas
     }
 
     fun cancelarCita(id: Int) {
-        citas = citas.filter { it.id != id }
+        //citas = citas.filter { it.id != id }
+        val nuevasCitas = mutableListOf<CitaState>()
+        for (cita in citas) {
+            if (cita.id != id) {
+                nuevasCitas.add(cita)
+            }
+        }
+        citas = nuevasCitas
     }
 
     fun obtenerCitas(): List<CitaState> = citas
