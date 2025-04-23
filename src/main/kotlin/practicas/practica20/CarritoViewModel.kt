@@ -1,22 +1,24 @@
 package practicas.practica20
 class CarritoViewModel {
-    private var uiState = CarritoState()
+    private var carritoState = CarritoState()
 
     fun agregarProducto(producto: Producto) {
-        uiState = uiState.copy(
-            productos = uiState.productos + producto,
-            total = uiState.total + producto.precio
+        carritoState = carritoState.copy(
+            productos = carritoState.productos + producto,
+            total = carritoState.total + producto.precio
         )
     }
 
     fun removerProducto(producto: Producto) {
-        if (producto in uiState.productos) {
-            uiState = uiState.copy(
-                productos = uiState.productos - producto,
-                total = uiState.total - producto.precio
-            )
+        if (producto in carritoState.productos) {
+          carritoState = carritoState.copy(
+              productos =carritoState.productos-producto,
+              total =carritoState.total- producto.precio
+          )
         }
     }
 
-    fun obtenerEstado(): CarritoState = uiState
+    fun obtenerEstado(): CarritoState {
+        return carritoState
+    }
 }
