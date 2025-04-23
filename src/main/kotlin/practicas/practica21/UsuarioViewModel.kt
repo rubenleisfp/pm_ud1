@@ -8,6 +8,7 @@ class UsuarioViewModel {
     }
 
     fun cambiarEstadoUsuario(id: Int) {
+        //Nueva traza
         //Para actualizar el estado de un usuario
         //Crear una nueva lista a partir de la existente.
         //Recorremos la actual lista de usuarios y:
