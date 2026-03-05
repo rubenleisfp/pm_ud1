@@ -1,1 +1,1 @@
-[Tutorial de Kotlin](https://github.com/rubenleisfp/pm_ud1/doc).
+[Tutorial de Kotlin](https://github.com/rubenleisfp/pm_ud1/blob/starter/doc/01_variables_en_kotlin.md)
